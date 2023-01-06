@@ -13,7 +13,7 @@
             <div class="nav">
                 01.-<a href="">About</a>
                 02.-<a href="">Experience</a>
-                03.- <a href="">Work</a>
+                03.-<a href="">Work</a>
                 04.-<a href=""> Contact</a>
             <button><a href="">Resume</a></button>
             </div>
@@ -33,39 +33,43 @@
         <section class="about">
             <h2>01.- About Me</h2>
             <div class="About">
-                <div><img src="/imgs/profilepic.jpg" height="200px" alt=""></div>
+                <div><img src="/imgs/profilepic.jpg" height="250px" alt=""></div>
                 <div>
                     
                     <br/>
-                    <h3>Hi! my name is David, I'm starting out as a web developer, I got certified in October 2022 as a full stack developer. I love traveling in my motorcycle and I was looking for a way to work remotely that allowed me to adopt a new life style - I've always been pulled by an intrest in tech so this looked like an obvious choice.</h3>
+                    <h4>Hi! my name is David, I'm starting out as a web developer and an experienced industrial engineer, I got certified in October 2022 as a full stack developer. I'm intrested in remote job opportunities to start out as a dev, I'm looking for an opportunity tu specialize either as front or backend engineer.</h4>
                     <br/>
-                    <h3>In my previous job I had experience in supply chain (including production planning, procurement, and manufacturing scheduling), quality (writing S&OPs), process engineering and costs. I dropped that career, the logistics for transportation to my job got complicated. I've worked on my own business ever since but the pandemic hitted hard on finances and I started looking for alternatives</h3>
+                    <h4>In my previous job I had experience in supply chain (including production planning, procurement, and manufacturing scheduling), quality (writing S&OPs), process engineering and costs. I dropped that career, the logistics for transportation to my job got complicated. I've worked on my own business ever since but the pandemic hitted hard on finances and I started looking for alternatives</h4>
                     <br/>
-                    <h3>This is my current stack</h3>
-                    <ol>
+                    <h4>This is my current stack</h4>
+                    <ul>
                         <li>mongodb</li>
+                        <li>sequelize</li>
                         <li>node.js</li>
                         <li>express</li>
                         <li>react</li>
                         <li>redux</li>
                         <li>next.js</li>
                         <li>bootstrap</li>
-                    </ol>
+                    </ul>
                 </div>
                 
             </div>
         </section>
 
         <section>
+            <h2>02.- Experience (click one to show content)</h2>
             <div class="Experience">
                 <div role="tablist">
-                    <button id="tab-0"role="tab">Teva Pharmaceuticals</button>
-                    <button id="tab-1"role="tab">Federal Mogul</button>
-                    <button id="tab-2"role="tab">Arracheras Relampago</button>
+                    <button id="1" class="expButton" onClick="toggle(id)">Teva Pharmaceuticals</button>
+                    <button id="2" class="expButton" onClick="toggle(id)">Federal Mogul</button>
+                    <button id="3" class="expButton" onClick="toggle(id)">Arracheras Relampago</button>
                     <div class="jobs"></div>
                 </div>
+
+                    
                     <div class=" panel">
-                        <div id="panel-0" role="tabpanel" tabindex="0" >
+                        <div id="1a" class="inactive">
                             <h3>Production Scheduler</h3>
                             <span class="company">@ Teva</span>
                             <p class="range">Dec 2012 - Jan 2018</p>
@@ -78,7 +82,7 @@
                         </div>
                     </div>
                     <div class=" panel">
-                        <div id="panel-0" role="tabpanel" tabindex="0" >
+                        <div id="2a" class="inactive" >
                             <h3>Manufacturing / Procurement planning + Inventory Forecasting</h3>
                             <span class="company">@ Federal Mogul</span>
                             <p class="range">Jan 2018 - Dec 2018</p>
@@ -91,7 +95,7 @@
                         </div>
                     </div>
                     <div class=" panel">
-                        <div id="panel-0" role="tabpanel" tabindex="0" >
+                        <div id="3a" class="inactive" >
                             <h3>Owner</h3>
                             <span class="company">@ Arracheras Relampago</span>
                             <p class="range">Jan 2019 - Present</p>
@@ -109,18 +113,61 @@
         </section>
 
         <section class="work">
+            <h2>03.- Work</h2>
             <h2>work I've done</h2>
 
             <div>
                 <h3>Project:</h3>
-                <h2>Example</h2>
-                <h4>description:</h4>
-                <h5>tools</h5>
-                links:
-
+                <h2>Study Rooms</h2>
+                <h4>Full stack developer certification project, similar to stack overflow it is a social media website designed for students that want to answer their questions on multiple subjects, </h4>
+                <h5>sequelize, redux, react, boootstrap and deployed with heroku and vercel</h5>
+                <a href=https://study-rooms-gilt.vercel.app">study rooms</a> 
+                <br/>
             </div>
+
+                        <div>
+                <h3>Project:</h3>
+                <h2>Asteroids</h2>
+                <h4>Practice project to improve vanilla js skills, currently finnishing in debbugin </h4>
+                <h5>vanilla</h5>
+                <a href="https://iisblitz.github.io/asteroids.github.io/">asteroids</a> 
+                <br/>
+            </div>
+
+                        <div>
+                <h3>Project:</h3>
+                <h2>CSL dashboard</h2>
+                <h4>Last supply chain implementation, costumer service level dashboard evaluates manufacturing vs back order and manufacturing plan to facilitate visibility and allow supply chain team to implement actions to improve metrics</h4>
+                <h5>BPCS / Excel</h5>
+                video:
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6988913726385004544?compact=1" height="399" width="710" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+            </div>
+
         </section>
 
+
+        <section>
+            <h3>get in touch</h3>
+
+<html>
+<body>
+
+<h2>Send e-mail</h2>
+
+<form action="mailto:iis_dbga@live.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
+
+        </section>
 
     </main>
 

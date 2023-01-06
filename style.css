@@ -40,8 +40,13 @@ html {
 }
 
 body {
+  margin: 0px;
   background-color: black;
   color: white;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  line-height: 1.3;
 }
 
 header {
@@ -94,7 +99,6 @@ section h3 {
 .About {
   display: flex;
   flex-direction: row;
-
   align-items: center;
 }
 
@@ -102,11 +106,41 @@ section {
   margin: 300px;
 }
 
+section h2 {
+  color: aqua;
+}
+
 .About img {
   margin-right: 30px;
+}
+
+.About h4 {
+  color: white;
+}
+.About ul {
+  text-align: center;
+  text-decoration: none;
 }
 
 .about {
   display: flex;
   flex-direction: column;
+}
+
+.panel {
+  background-color: transparent;
+
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.panel .inactive {
+  display: none;
+}
+
+.panel .active {
+  display: block;
 }
