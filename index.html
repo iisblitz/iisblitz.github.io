@@ -11,15 +11,15 @@
     <header>
             <img src="/imgs/Logo-removebg-preview.png" alt="logo" height="200px">
             <div class="nav">
-                01.-<a href="">About</a>
-                02.-<a href="">Experience</a>
-                03.-<a href="">Work</a>
-                04.-<a href=""> Contact</a>
+                01.-<a id="about" href="#about">About</a>
+                02.-<a href="#experience">Experience</a>
+                03.-<a href="#work">Work</a>
+                04.-<a href="#contact"> Contact</a>
             <button><a href="">Resume</a></button>
             </div>
     </header>
 
-    <main>
+    <div class="container">
         <section>
             <div class="intro">
                 <h4>Hello! my name is</h4>
@@ -30,7 +30,7 @@
 
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <h2>01.- About Me</h2>
             <div class="About">
                 <div><img src="/imgs/profilepic.jpg" height="250px" alt=""></div>
@@ -57,9 +57,9 @@
             </div>
         </section>
 
-        <section>
+        <section class="Experience" id="experience">
             <h2>02.- Experience (click one to show content)</h2>
-            <div class="Experience">
+            <div>
                 <div role="tablist">
                     <button id="1" class="expButton" onClick="toggle(id)">Teva Pharmaceuticals</button>
                     <button id="2" class="expButton" onClick="toggle(id)">Federal Mogul</button>
@@ -112,9 +112,9 @@
             </div>
         </section>
 
-        <section class="work">
+        <section class="work" id="work">
             <h2>03.- Work</h2>
-            <h2>work I've done</h2>
+            <h3>Here are some of the projects I've done</h3>
 
             <div>
                 <h3>Project:</h3>
@@ -146,11 +146,9 @@
         </section>
 
 
-        <section>
+        <section id="contact">
             <h3>get in touch</h3>
 
-<html>
-<body>
 
 <h2>Send e-mail</h2>
 
@@ -164,12 +162,10 @@ Comment:<br>
 <input type="reset" value="Reset">
 </form>
 
-</body>
-</html>
 
         </section>
 
-    </main>
+    </div>
 
 
 
